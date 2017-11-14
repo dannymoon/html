@@ -1,0 +1,54 @@
+Hojiks-MacBook-Pro:HTML dannymoon$ cd ..
+Hojiks-MacBook-Pro:WebFun dannymoon$ cd .. ..
+Hojiks-MacBook-Pro:codingdojo dannymoon$ cd ..
+Hojiks-MacBook-Pro:Desktop dannymoon$ mkdir test
+Hojiks-MacBook-Pro:Desktop dannymoon$ cd test
+Hojiks-MacBook-Pro:test dannymoon$ touch index.html style.css commands.txt
+Hojiks-MacBook-Pro:test dannymoon$ cp index.html index_2.html
+Hojiks-MacBook-Pro:test dannymoon$ rm style.css
+Hojiks-MacBook-Pro:test dannymoon$ cd /Desktop
+-bash: cd: /Desktop: No such file or directory
+Hojiks-MacBook-Pro:test dannymoon$ cd /
+Hojiks-MacBook-Pro:/ dannymoon$ pwd
+/
+Hojiks-MacBook-Pro:/ dannymoon$ cd ~
+Hojiks-MacBook-Pro:~ dannymoon$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	README.md
+Hojiks-MacBook-Pro:~ dannymoon$ cd Desktop
+Hojiks-MacBook-Pro:Desktop dannymoon$ mkdir destination
+Hojiks-MacBook-Pro:Desktop dannymoon$ mv ~/Desktop/test/index_2.html /~/Desktop/destination
+mv: rename /Users/dannymoon/Desktop/test/index_2.html to /~/Desktop/destination: No such file or directory
+Hojiks-MacBook-Pro:Desktop dannymoon$ mv index_2.html Desktop/destination/
+mv: rename index_2.html to Desktop/destination/: No such file or directory
+Hojiks-MacBook-Pro:Desktop dannymoon$ mv index_2.html ~/Desktop/destination/
+mv: rename index_2.html to /Users/dannymoon/Desktop/destination/index_2.html: No such file or directory
+Hojiks-MacBook-Pro:Desktop dannymoon$ cd test
+Hojiks-MacBook-Pro:test dannymoon$ mv index_2.html ~/Desktop/destination/
+Hojiks-MacBook-Pro:test dannymoon$ ls
+commands.txt	index.html
+Hojiks-MacBook-Pro:test dannymoon$ cd ..
+Hojiks-MacBook-Pro:Desktop dannymoon$ cd destination
+Hojiks-MacBook-Pro:destination dannymoon$ ls
+index_2.html
+Hojiks-MacBook-Pro:destination dannymoon$ rm -rf destination
+Hojiks-MacBook-Pro:destination dannymoon$ cd /
+Hojiks-MacBook-Pro:/ dannymoon$ cd Desktop
+-bash: cd: Desktop: No such file or directory
+Hojiks-MacBook-Pro:/ dannymoon$ ls
+Applications			etc
+Library				home
+Network				installer.failurerequests
+System				net
+Users				private
+Volumes				sbin
+bin				tmp
+cores				usr
+dev				var
+Hojiks-MacBook-Pro:/ dannymoon$ cd ~
+Hojiks-MacBook-Pro:~ dannymoon$ ls
+Applications	Documents	Library		Music		Public
+Desktop		Downloads	Movies		Pictures	README.md
+Hojiks-MacBook-Pro:~ dannymoon$ cd Desktop/
+Hojiks-MacBook-Pro:Desktop dannymoon$ rm -rf destination
+Hojiks-MacBook-Pro:Desktop dannymoon$ 
